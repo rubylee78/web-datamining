@@ -1,0 +1,35 @@
+body{
+
+	background-color:#FFE8E8;
+	font-style: "微軟正黑體";
+}
+
+h1{
+
+	font-size:60px;
+	text-align: center;
+
+}
+
+p{
+	font-size: 30px;
+	text-align: center;
+
+}
+
+#btnplace{
+
+	text-align: center;
+}
+
+.btn{
+
+	font-size: 30px;
+	background-color: white;	
+}
+
+#gohomediv{
+
+	text-align: right;
+}
+
