@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>個人搜尋引擎</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="javascript/main.js"></script>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+	<div id="maintop">
+		
+		<p class="subtitle">輸入關鍵字</p>
+		<hr>
+
+		<table>
+			<tr>
+				<td>
+					<select id="typeselect">
+						<option>--請選擇保險類別--</option>
+						<option value="保險">保險</option>
+						<option value="產險">產險</option>
+					</select>
+				</td>
+
+				<td>
+					<select id="valueselect">
+						<option>--請選擇保險價值--</option>
+						<option value="銷售">銷售</option>
+						<option value="核保">核保</option>
+						<option value="理賠">理賠</option>
+						<option value="保護服務">保護服務</option>
+						<option value="精算">精算</option>
+						<option value="投資">投資</option>
+						<option value="風險管理">風險管理</option>
+					</select>
+				</td>
+
+				<td>
+					<select id="technologyselect">
+						<option>--請選擇科技技術--</option>
+						<option value="人臉辨識">人臉辨識</option>
+						<option value="OCR">OCR</option>
+						<option value="身分驗證">身分驗證</option>
+						<option value="人工智慧">人工智慧</option>
+						<option value="機器學習">機器學習</option>
+						<option value="區塊鏈">區塊鏈</option>
+						<option value="大數據">大數據</option>
+						<option value="雲端">雲端</option>
+						<option value="數位轉型">數位轉型</option>
+						<option value="聊天機器人">聊天機器人</option>
+						<option value="生態圈">生態圈</option>
+						<option value="客戶體驗">客戶體驗</option>
+						<option value="API">API</option>
+						<option value="UBI">UBI</option>
+						<option value="外溢保單">外溢保單</option>
+						<option value="監理沙盒">監理沙盒</option>
+						<option value="網路投保">網路投保</option>
+					</select>
+				</td>
+
+				<td>
+					<button id="confirmbtn" onclick="send()">確認</button>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+	<div id="result" >
+			
+			<p>查詢結果</p>
+			<table id="searchtable"></table>
+
+	</div>
+
+</body>
+</html>
