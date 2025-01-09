@@ -1,0 +1,90 @@
+td{
+
+	border:0.5rem #CD5C5C groove;
+	width: 18rem;
+	height: 5rem;
+
+}
+
+#choicetable{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:90vh;
+	width:50vw;
+	float: left;
+}
+
+#confirmAndPep{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:90vh;
+	width:45vw;
+	float:right; 
+}
+
+#confirmAndPep td{
+
+	border:none; 
+}
+
+h1{
+
+	font-size: 1.5rem;
+	line-height: 0.5rem;
+}
+
+.theform{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.theform select,input{
+
+	font-size: 1.6rem;
+}
+
+.theform input{
+
+	width: 40%;
+}
+
+#comfirmbtn{
+
+	width: 12rem;
+	height: 3rem;
+	font-size: 1.6rem;
+}
+
+#finalanswer{
+
+	background-color: pink;
+	font-size: 3.5rem;
+	text-align: center;
+}
+
+#gohomediv{
+
+	text-align: right;
+}
+
+#leafdiv{
+
+	text-align: left;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	background-image: url("../maind.jpg");
+	background-color: rgba(255,255,255,0.8);
+	background-blend-mode: lighten;
+	background-size: cover;
+	 
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>李采容的決策樹分析系統</title>
+	<link rel="stylesheet" type="text/css" href="css/maind.css">
+	<script type="text/javascript" src="javascript/maind.js"></script>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+
+	<div id="leafdiv">
+			<a href="changebackground/changebackground.html">葉子</a>
+	</div>
+
+	<div id="gohomediv">
+			<a href="main.html">回主頁</a>
+	</div>
+
+	
+
+	<div id="choicetable">
+		
+		<table>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h1>Team:&nbsp&nbsp&nbsp</h1>
+						<select id ="teamselect">
+							<option value="LAD">LAD</option>
+							<option value="CHC">CHC</option>
+						</select>
+					</div>
+					
+				</td>
+
+				<td>
+					<div class="theform">
+						<h1>Home:&nbsp&nbsp&nbsp</h1>
+						<select id="homeselect">		
+							<option value="Home">home</option>
+							<option value="Away">away</option>
+						</select>
+					</div>
+				
+				</td>
+
+				<td>
+					<div class="theform">
+						<h1>Year:&nbsp&nbsp&nbsp</h1>
+						<select id="yaerselect">		
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+							<option value="2024">2024</option>
+						</select>
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h1>Month:&nbsp&nbsp&nbsp</h1>
+						<select id=monthselect>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+						</select>
+
+				</td>
+				<td>
+					<div class="theform">
+						<h1>Opp:&nbsp&nbsp&nbsp</h1>
+						<select id=oppselect>
+							<option value="ARI">ARI</option>
+							<option value="ATL">ATL</option>
+							<option value="BAL">BAL</option>
+							<option value="CHW">CHW</option>
+							<option value="CHC">CHC</option>
+							<option value="CIN">CIN</option>
+							<option value="CLE">CLE</option>
+							<option value="COL">COL</option>
+							<option value="DET">DET</option>
+							<option value="HOU">HOU</option>
+							<option value="LAA">LAA</option>
+							<option value="LAD">LAD</option>
+							<option value="MIA">MIA</option>
+							<option value="MIL">MIL</option>
+							<option value="MIN">MIN</option>
+							<option value="NYY">NYY</option>
+							<option value="NYM">NYM</option>
+							<option value="OAK">OAK</option>
+							<option value="PHI">PHI</option>
+							<option value="PIT">PIT</option>
+							<option value="SDP">SDP</option>
+							<option value="SEA">SEA</option>
+							<option value="SFG">SFG</option>
+							<option value="STL">STL</option>
+							<option value="TBR">TBR</option>
+							<option value="TEX">TEX</option>
+							<option value="TOR">TOR</option>
+							<option value="WSN">WSN</option>
+							<option value="KCR">KCR</option>
+							<option value="BOS">BOS</option>
+						</select>
+					</div>				
+			    </td>
+
+			    <td>
+
+					<div class="theform">
+						<h1>PA(0-10):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="PA">
+					</div>
+				
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h1>H(0-8):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="H">
+					</div>				
+				</td>
+				<td>
+					<div class="theform">
+						<h1>HR(0-5):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="HR">
+					</div>				
+				</td>
+
+				<td>
+					
+					<div class="theform">
+						<h1>RBI(0-10):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="RBI">
+					</div>				
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h1>BB(0-5):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="BB">
+					</div>			
+	
+				</td>
+				<td>
+				    <div class="theform">
+						<h1>SO(0-5):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="SO">
+					</div>	
+			    </td>
+
+			    <td>
+				    <div class="theform">
+						<h1>AVG(BA)(0-1):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="AVG">
+					</div>	
+			    </td>
+
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h1>OBP(0-1):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="OBP">
+					</div>				
+				</td>
+				<td>
+					<div class="theform">
+						<h1>SLG(0-2):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="SLG">
+					</div>				
+				</td>
+
+				<td>
+					
+					<div class="theform">
+						<h1>OPS(0-2):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="OPS">
+					</div>				
+				</td>
+
+			</tr>
+
+			<tr>
+				<td>
+					<div class="theform">
+						<h1>BOP:&nbsp&nbsp&nbsp</h1>
+						<select id=BOPselect>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+						</select>
+					</div>			
+	
+				</td>
+				<td>
+				    <div class="theform">
+						<h1>POS(守位):&nbsp&nbsp&nbsp</h1>
+						<input type="text" id="POS">
+					</div>	
+			    </td>
+
+			    <td>
+				    <div class="theform">
+						<h1>Inngs:&nbsp&nbsp&nbsp</h1>
+						<select id=Inngsselect>
+							<option value="CG">CG</option>
+							<option value="GF">GF</option>
+							<option value="GS">GS</option>
+							<option value="OTHERS">OTHERS</option>
+						</select>
+					</div>	
+			    </td>
+
+			</tr>
+
+		</table>
+
+	</div>
+
+	<div id="confirmAndPep">
+		
+		<table>
+			
+			<tr>
+				
+				<td>
+					<button id="comfirmbtn" onclick="confirm()">確認送出</button>
+				</td>
+				<td><h1>預測W/L</h1></td>
+				<td id="finalanswer">W or L</td>
+
+			</tr>
+
+		</table>
+
+	</div>
+
+
+</body>
+</html>
